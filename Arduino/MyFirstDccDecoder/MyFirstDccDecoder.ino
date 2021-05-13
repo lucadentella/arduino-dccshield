@@ -18,7 +18,7 @@ void notifyDccAccTurnoutOutput(uint16_t Addr, uint8_t Direction, uint8_t OutputP
     }
   }
     
-  Serial.print("Addr: "); Serial.println(Addr);
+  Serial.print("Address: "); Serial.println(Addr);
   Serial.print("Direction: "); Serial.println(Direction);
   Serial.print("OutputPower: "); Serial.println(OutputPower);
   Serial.println("--------------------");
