@@ -7,8 +7,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: arduino/compile-sketches@v1.0.0
+      
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Build
+        uses: arduino/compile-sketches@v1.0.0
         with:
           fqbn: 'arduino:avr:uno'
           libraries: |
